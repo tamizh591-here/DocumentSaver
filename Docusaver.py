@@ -15,16 +15,16 @@ def take_screenshot():
     os.remove(screenshot_path)
     index += 1
 
-print("Press 's' key to take screenshot or Press 'q' to exit and save document")
+print("Press '' key to take screenshot or Press '' to exit and save document")
 
 while True:
-    if keyboard.is_pressed('s'):
+    if keyboard.is_pressed('Your own keyboard key to take screen shot'): 
         take_screenshot()
         print(f"Screenshot taken: {index}")
         while keyboard.is_pressed('s'):  
             pass
 
-    if keyboard.is_pressed('q'):
+    if keyboard.is_pressed('Your own keyboard key to stop the script'):
         output_filename = input("Enter the document name with extension: ")
         doc.save(output_filename)
         print("File Saved Successfully !!")
